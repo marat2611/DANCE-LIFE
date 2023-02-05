@@ -17,7 +17,7 @@
                 <div class="header-container__img">
                     <a href="#!"><img src="images/Logo2.png" alt="Логотип"></a>
                 </div>
-                <!------------ HAMBURGER ------------>
+                <!------------- HAMBURGER ------------->
                 <button class="header__toggle hamburger hamburger--squeeze" type="button" onclick="this.classList.toggle('is-active')">
                     <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -1468,15 +1468,13 @@
                     <p class="record-form__info--top">! ЗАПОЛНЯЙ ФОРМУ, И МЫ СВЯЖЕМСЯ С ТОБОЙ В БЛИЖАЙШЕЕ ВРЕМЯ И ПРЕДОСТАВИМ ПОДРОБНУЮ ИНФОРМАЦИЮ</p>
                     <p class="record-form__info--bottom">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку персональных данных</p>
                 </div>
-                <form id="record-form-id" class="record-form" action="" method="post">
+                <form id="record-form-id" class="record-form" action="PHP/telegram.php" method="post">
                     <div class="form-container d-flex">
                         <legend class="legend">ОНЛАЙН-ЗАЯВКА</legend>
-                        <input class="form-input" type="text" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" title="Введите свое имя русскими или латинскими буквами">
-                        <input class="form-input" type="tel" placeholder="Телефон в формате 8ХХХХХХХХХХ" pattern="8[0-9]{10}" title="Введите номер телефона в формате 8ХХХХХХХХХХ">
-                        <input class="form-input" type="email" placeholder="e-mail">
-                        <div class="form__button d-flex">
-                            <a href="">ОТПРАВИТЬ</a>
-                        </div>
+                        <input name="user_name" class="form-input" type="text" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" title="Введите свое имя русскими или латинскими буквами">
+                        <input name="user_phone" class="form-input" type="tel" placeholder="Телефон в формате 8ХХХХХХХХХХ" pattern="8[0-9]{10}" title="Введите номер телефона в формате 8ХХХХХХХХХХ">
+                        <input name="user_email" class="form-input" type="email" placeholder="e-mail">
+                        <button type="submit" class="form__button">ОТПРАВИТЬ</button>
                     </div>
                     
                 </form>
