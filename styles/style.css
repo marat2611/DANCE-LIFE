@@ -1,0 +1,914 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/****Прибиваем футер****/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Raleway';
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(0deg,#B5179E ,#B5179E ,#B5179E)
+    /* background: linear-gradient(0deg, #240046, #FF6D00); */
+    /* background: radial-gradient(40% 50%,  #FF6D00, #240046); */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+main {
+    flex: 1 0 auto;
+    height: auto;
+}
+
+footer {
+    flex: 0 0 auto;
+}
+/* Закончили прибивать*/
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-sb {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.d-grid {
+    display: grid;
+}
+
+:root {
+    --color-background: #240046;
+    --color-background2: #B5179E;
+    --color-background3: #4CC9F0;
+    --color-background4: #700C74;
+    --color-orange: #FF6D00;
+    --color-orangelith: #FF9E00;
+    --color-white: #FFFFFF;
+    --font-size-base: 16px;
+    --font-size-h1: 62px;
+    --font-size-h2: 40px;
+    --font-size-h3: 32px;
+}
+
+span {
+    color: var(--color-orangelith);
+}
+
+/********* ШАПКА **********/
+
+header {
+    height: 160px;
+    background-color: var(--color-background);
+}
+
+.header-container {
+    height: 160px;
+    align-items: center;
+    position: relative;
+}
+
+.education-text .button-enroll {
+    display: flex;
+}
+
+.hamburger {   /* Гамбургер */
+    display: none;
+}
+
+.header-container__menu {
+    align-items: center;
+    width: 650px;
+    list-style: none;
+}
+
+.header-container__menu a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-style: bold;
+}
+
+.header-container__img {
+    margin-top: 10px;
+    position: relative;
+    right: 37px;
+}
+
+.header-container__menu li {
+    width: 147px;
+    text-align: center;
+}
+
+.header__button {
+    width: 227px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--color-white);
+}
+
+.header__button a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--color-white);
+}
+
+/********* ШАПКА - конец **********/
+
+
+/*********** БАННЕР ***********/
+.banner {
+    height: 683px;
+    background: linear-gradient(180deg, #240046, #B5179E);
+}
+
+.banner-container h1 {
+    margin-top: 67px;
+    width: 568px;
+    font-family: 'Raleway';
+    font-style: bold;
+    line-height: 130px;
+    color: var(--color-white);
+    font-size: 80px;
+    margin-bottom: 81px;
+}
+
+/* background: linear-gradient(0deg,#FF6D00,#9D4EDD,#FF6D00); */
+
+.banner-container .header__button {
+    width: 555px;
+    margin-top: 67px;
+}
+
+
+
+.banner-container p {
+    margin-bottom: 24px;
+}
+
+.banner-container .header__button a {
+    color: var(--color-white);
+}
+
+.banner-container img {
+    margin-left: 45px;
+}
+
+/********* БАННЕР - конец **********/
+
+.dance-styles {
+    height: auto;
+}
+.dance-styles__top {
+    width: auto;
+    height: 62px;
+    align-items: center;
+}
+
+.dance-styles__top-container {
+    height: 200px;
+    align-items: center;
+    background-color: rgba(36, 0, 70, 0.25);
+}
+
+.dance-styles__top h2 {
+    font-family: 'Raleway';
+    font-size: 60px; 
+    width: 700px;   
+}
+
+
+.btn {
+    width: 220px;
+    justify-content: center;
+    height: 62px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 20px white;
+    background-color: var(--color-background3);
+    background-color: rgba(36, 0, 70, 0.10);
+    color: var(--color-white);
+}
+
+.dance-styles-adults {
+    border-radius: 10px 0 0 10px;
+}
+
+.dance-styles-kids {
+    border-radius: 0 10px 10px 0;
+}
+
+/* background: linear-gradient(0deg,#FF6D00,#9D4EDD,#FF6D00); */
+.btn:hover {
+    background: linear-gradient(0deg,#4CC9F0,#9D4EDD,#4CC9F0);
+} 
+
+.filterDiv {
+    display: none; /* Скрыто по умолчанию */
+}
+
+.show { /*добавляется к отфильтрованные элементы */
+    display: block;
+}
+
+
+.btn.active { /* Добавить темный фон для активной кнопки */
+    background-color: #9D4EDD;
+    color: white;
+}
+
+.dance-styles__blocks {
+    margin-bottom: 50px;
+}
+
+.dance-styles__blocks a {
+    text-decoration: none;
+    font-family: 'Raleway';
+    color: var(--color-white);
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.style__block { 
+    width: 343px;
+    height: 143px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(36, 0, 70, 0.25);
+    /* background: linear-gradient(0deg,#FF6D00,#FF9E00,#FF6D00); */
+    background: linear-gradient(0deg,#7209B7,#4CC9F0,#7209B7);
+}
+
+.style__block:hover {
+    background: linear-gradient(0deg,#4CC9F0,#9D4EDD,#4CC9F0);
+}
+
+.style__block p {
+    width: 250px;
+    text-align: center;
+}
+
+
+
+.dance-styles__bottom .container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.timetable-h2 {
+    background-color: rgba(36, 0, 70, 0.25);
+    height: 200px;
+    align-items: center;
+    
+}
+
+.timetable h2 {
+    font-family: 'Raleway';
+    font-size: 62px;
+    width: 1140px;
+    text-align: left;
+}
+
+.branches {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 14px;
+    margin-top: 100px;
+}
+
+.timetable-rodionova, .timetable-vorovskogo {
+    width: 560px;
+    height: 490px;
+    border: 2px solid rgba(36, 0, 70, 0.25);
+    border-radius: 10px;
+    position: relative;
+    background: linear-gradient(0deg,#FF6D00,#FF9E00,#FF6D00);
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+.timetable-rodionova .header__button a {
+    color: var(--color-white);
+}
+
+.timetable-vorovskogo .header__button {
+    position: absolute;
+    top: 370px;
+    width: 480px;
+    margin-left: 40px;
+}
+
+.timetable-vorovskogo .header__button a {
+    color: var(--color-white);
+}
+
+.timetable-table__rodionova {
+    margin-bottom: 50px;
+}
+
+.timetable {
+    margin-bottom: 100px;
+}
+
+.table__rodionova-kids, .table__rodionova-adults {
+    border: 2px solid rgba(36, 0, 70, 0.25);
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.table__rodionova--r1 {
+    color: var(--color-background);
+}
+
+th {
+    color: var(--color-background);
+    background: linear-gradient(0deg,#7209B7,#4CC9F0,#7209B7);
+}
+
+td {
+    border: 2px solid rgba(36, 0, 70, 0.25);
+    padding-left: 7px;
+}
+
+tr {
+    height: 40px;
+}
+
+tr:hover {
+    background: linear-gradient(0deg,#4CC9F0,#9D4EDD,#4CC9F0);
+}
+
+.btn, .btn3, .btn4, .btn5{
+    cursor: pointer;
+}
+
+.btn3 {
+    color: var(--color-white);
+    position: absolute;
+    top: 370px;
+    width: 290px;
+    height: 70px;
+    /* background-color: var(--color-orange); */
+    background: linear-gradient(0deg,#7209B7,#4CC9F0,#7209B7);
+    border: 2px solid rgba(36, 0, 70, 0.25);
+    border-radius: 10px;
+}
+
+.filterDiv2 {
+    display: none;
+}
+
+.show3 {
+    display: block;
+}
+
+.header__button:hover {
+    background: linear-gradient(0deg,#4CC9F0,#9D4EDD,#4CC9F0);
+}
+
+.btn3.active3 {
+    background: var(--color-orangelith);
+  }
+
+.our-teachers__h2 {
+    background-color: rgba(36, 0, 70, 0.25);
+    height: 200px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn3:hover {
+    background: linear-gradient(0deg,#4CC9F0,#9D4EDD,#4CC9F0);
+}
+
+.our-teachers__h2 h2 {
+    font-family: 'Raleway';
+    font-size: 62px;
+    width: 1140px;
+}
+
+.our-teachers__content {
+    margin-top: 50px;
+}
+
+.our-teacher {
+    margin-bottom: 50px;
+}
+
+.our-teacher img {
+    margin-bottom: 15px;
+}
+
+.our-teacher p {
+    margin-bottom: 10px;
+}
+
+.questions-answers-h2 {
+    margin-bottom: 50px;
+}
+
+.questions-answers-h2 h2 {
+    font-family: 'Raleway';
+    font-size: 62px;
+    width: 1140px;
+}
+
+.questions-answers-h2 {
+    background-color: rgba(36, 0, 70, 0.25);
+    height: 200px;
+    align-items: center;
+}
+
+/********* Расписания *********/
+
+.service-cost {
+    margin-bottom: 100px;
+}
+
+.service-cost-h2 {
+    background-color: rgba(36, 0, 70, 0.25);
+    height: 200px;
+    align-items: center;
+}
+
+.service-cost-h2 h2 {
+    font-family: 'Raleway';
+    font-size: 62px;
+    width: 1140px;
+}
+
+.service-cost-btn {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-template-columns: repeat(3,1fr);
+    height: 70px;
+}
+
+.service-cost button{
+    background: linear-gradient(0deg,#7209B7,#4CC9F0,#7209B7);
+    border: 2px solid rgba(36, 0, 70, 0.25);
+    color: var(--color-white);
+    box-shadow: 0px 0px 20px rgba(36, 0, 70, 0.25);
+}
+
+.service-cost button:hover {
+    background: linear-gradient(0deg,#4CC9F0,#9D4EDD,#4CC9F0);
+}
+
+.subscription {
+    border-radius: 10px 0 0 10px;
+}
+
+.rent {
+    border-radius: 0 10px 10px 0;
+}
+
+.subscription-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.subscription-info table td {
+    padding-left: 20px;
+}
+
+.subscription-info table td ul {
+    padding-left: 20px;
+}
+
+.subscription-kids-btn {
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 20px;
+}
+
+.subscription-kids-btn button {
+    height: 50px;
+}
+
+.subscription-1h-btn {
+    border-radius: 10px 0 0 10px;
+}
+
+.subscription-kids-btn {
+    border-radius: 0 10px 10px 0;
+}
+
+.filterDiv4 {
+    display: none; /* Скрыто по умолчанию */
+}
+
+.show4 {
+    display: block;
+
+}
+
+.btn4.active4 { 
+    background: linear-gradient(0deg,#9D4EDD,#4CC9F0,#9D4EDD);
+}
+
+.filterDiv5 {
+    display: none; /* Скрыто по умолчанию */
+}
+
+.show5 {
+    display: block;
+
+}
+
+.btn5.active5 { 
+    background: linear-gradient(0deg,#9D4EDD,#4CC9F0,#9D4EDD);
+}
+
+/********* Расписания - конец *********/
+
+/********* Акции *********/
+
+.promotions-info {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.promotions-info-block {
+    width: 360px;
+    height: 340px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(36, 0, 70, 0.1);
+}
+
+.promotions-info-block p {
+    text-align: center;
+}
+
+.promotions-info-p1, .promotions-info-p2, .promotions-info-p3 {
+    height: 90px;
+    line-height: 23px;
+}
+
+.promotions-info-p1 {
+    width: 250px;
+    height: 65px;
+    padding-top: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(45deg, #4CC9F0, #F72585, #FF6D00);
+}
+
+.promotions-info-p2 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.promotions-info-p3 {
+    height: 60px;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(36, 0, 70, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********* Акции - конец *********/
+
+/********* Стоимость аренды *********/
+.rent-ifo-h2 h2 {
+    font-family: 'Raleway';
+    font-size: 35px;
+    width: 1140px;
+    margin-bottom: 50px;
+}
+
+.rent-ifo-rooms p {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 25px;
+    width: 310px;
+    height: 110px;
+}
+
+.rent-ifo-rooms a {
+    font-family: 'Raleway';
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-background);
+    font-style: bold;
+    color: var(--color-white);
+}
+
+.rent-ifo-rooms a div {
+    width: 358px;
+    height: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rent-ifo-rooms a div:hover {
+    background: linear-gradient(0deg,#4CC9F0,#9D4EDD,#4CC9F0);
+}
+
+/********* Стоимость аренды - конец *********/
+
+/********* АККОРДЕОН **********/
+.accordion-div {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    width: 100%;
+    text-align: left;
+    background-color: rgba(36, 0, 70, 0.25);
+    color: var(--color-white);
+    border: 2px solid rgba(36, 0, 70, 0.25);
+    height: 75px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Добавить цвет фона для кнопки, если она нажата (добавить .активный класс с JS), а при наведении на него курсора мыши (наведите курсор) */
+
+.active2, .accordion:hover {
+    background-color: rgba(36, 0, 70, 0.4);
+}
+
+/* Стиль аккордеон панели. Примечание: скрыто по умолчанию */
+.panel {
+    padding: 0 18px;
+    background: linear-gradient(0deg,    rgba(76, 201, 240, 0.25),rgba(247, 37, 133, 0.25));
+    display: none;
+    overflow: hidden;
+    height: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.questions-answers-container {
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.accordion:after {
+    content: '\002B'; /* Символ юникода для "плюса" знак (+) */
+    font-size: 35px;
+    color: rgba(36, 0, 70, 0.3);
+    float: right;
+  }
+  
+  .active2:after {
+    content: "\00D7"; /* Символ юникода для "минуса" знак (-) */
+  }
+
+.about-us-block {
+    margin-bottom: 55px;
+}
+
+.about-us-block img {
+    width: 50%;
+}
+
+.about-us-block p {
+    font-size: 20px;
+    line-height: 40px;
+    margin-right: 35px;
+}
+
+.about-us-block2 {
+    width: 50%;
+    padding-left: 70px;
+}
+
+.about-us-block2 ul {
+    margin-top: 20px;
+    list-style: url();
+}
+
+.about-us-block2 ul li {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/********* АККОРДЕОН-конец **********/
+
+/********* ФОРМА ЗАПИСИ *********/
+
+
+.record-form {
+    height: 550px;
+    background: linear-gradient(180deg, #B5179E , #240046);
+}
+
+.record-form__info {
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.record-form__info--top {
+    font-family: 'Raleway';
+    font-size: var(--font-size-h3);
+    line-height: 40px;
+}
+
+.record-form__info--bottom {
+    margin-bottom: 67px;
+    font-family: 'Inter';
+    font-size: 20px;
+}
+
+form {
+    width: 50%;
+}
+
+.form-container {
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 36px;
+    margin-bottom: 50px;
+    background-color: rgba(90, 24, 154, 0.25);
+    border-radius: 10px;
+}
+
+legend {
+    margin-top: 45px;
+    font-size: var(--font-size-h2);
+    font-family: 'Raleway';
+    margin-bottom: 45px;
+}
+
+input {
+    margin-bottom: 45px;
+    height: 46px;
+    border-radius: 10px;
+    padding-left: 37px;
+    background-color: rgba(157, 78, 221, 0.6);
+    border: 2px solid rgba(181, 23, 158, 0.25);
+    outline: 0;
+    outline-offset: 0;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+input:focus {
+    border: 1px solid var(--color-orange);
+}
+
+
+
+input:valid {
+    border: 1px solid white;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+.form__button {
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--color-white);
+    height: 68px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background: linear-gradient(0deg,#4CC9F0,#9D4EDD,#4CC9F0);
+}
+
+.form__button a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-style: bold;
+}
+
+
+
+/********* ФОРМА ЗАПИСИ - конец*********/
+
+/********* ФУТЕР *********/
+
+footer {
+    height: 310px;
+    background-color: var(--color-background);
+}
+
+footer .container {
+    align-items: center;
+}
+
+.footer-left {
+    height: 272px;
+    align-items: center;
+}
+
+.footer__menu {
+    flex-direction: column;
+    gap: 32px;
+    list-style: none;
+}
+
+.footer__menu a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.footer-center {
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-media {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.social-media img {
+    margin-right: 26px;
+    margin-left: 26px;
+}
+
+.footer-rigth {
+    height: 100%;
+}
+
+.footer-rigth ul {
+    list-style: none;
+    color: var(--color-white);
+}
+
+.footer-rigth p {
+    color: var(--color-white);
+}
+
+.footer-rigth__adress {
+    margin-bottom: 30px;
+    
+}
+
+.footer-rigth li {
+    margin-bottom: 10px;
+}
+
+.footer-rigth__phone {
+    margin-bottom: 30px;
+}
+
+/********* ФУТЕР - конец *********/

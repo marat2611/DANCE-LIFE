@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Logo3.png" type="image/x-icon">
+    <title>DANCE LIFE</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/hamburger.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="header-container container d-flex flex-sb">
+                <div class="header-container__img">
+                    <a href="#!"><img src="images/Logo2.png" alt="Логотип"></a>
+                </div>
+                <!------------ HAMBURGER ------------>
+                <button class="header__toggle hamburger hamburger--squeeze" type="button" onclick="this.classList.toggle('is-active')">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <nav class="mobile-menu">
+                    <ul class="header-container__menu d-flex">
+                        <li><a href="#dance-styles">ТАНЦЕВАЛЬНЫЕ СТИЛИ</a></li>
+                        <li><a href="#service-cost">СТОИМОСТЬ</a></li>
+                        <li><a href="#timetable">РАСПИСАНИЕ</a></li>
+                        <li><a href="#record-form">КОНТАКТЫ</a></li>
+                        <li><a href="questions-answers">О НАС</a></li>
+                    </ul>
+                </nav>
+                <!------------ HAMBURGER (конец)------------>
+                <div class="header__button d-flex">
+                    <a href="#record-form">ЗАПИСАТЬСЯ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-container container d-flex">
+                <div>
+                    <h1> <span>С НАМИ</span>  ТЫ ЗАТАНЦУЕШЬ</h1>
+                    <div>
+                        <p>СОМНЕВАЕШЬСЯ?</p>
+                        <p>ПОПРОБУЙ РАЗОВОЕ ЗАНЯТИЕ!</p>
+                    </div>
+                    <div class="header__button d-flex">
+                        <a href="#record-form">ЗАПИСАТЬСЯ</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/banner-img-2.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="dance-styles">
+            <div class="dance-styles__top-container d-flex ">
+                <div class="dance-styles__top container d-flex flex-sb">
+                    <h2 id="dance-styles">ВЫБЕРИ СВОЙ СТИЛЬ</h2>
+                    <div class="dance-styles__buttons d-flex flex-sb" id="myBtnContainer">
+                        <button class="dance-styles-adults btn active" onclick="filterSelection('adults')">ВЗРОСЛЫЕ</button>
+                        <button class="dance-styles-kids btn" onclick="filterSelection('kids')">ДЕТИ</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dance-styles__bottom">
+                <div class="container">
+                    <div class="dance-styles__blocks dance-styles__blocks-adults d-flex flex-sb flex-wrap">
+                        <a href="#!" class="filterDiv adults kids"> 
+                            <div class="style__block d-flex">
+                                <p>HIP-HOP</p>
+                            </div> 
+                        </a>
+                        <a href="#!" class="filterDiv adults"> 
+                            <div class="style__block d-flex">
+                                <p>JAZZ-FUNK</p>
+                            </div> 
+                        </a>
+                        <a href="#!" class="filterDiv adults kids"> 
+                            <div class="style__block d-flex">
+                                <p>K-POP</p>
+                            </div> 
+                        </a>
+                        <a href="#!" class="filterDiv adults"> 
+                            <div class="style__block d-flex">
+                                <p>ВОСТОЧНЫЕ ТАНЦЫ</p>
+                            </div> 
+                        </a>
+                        <a href="#!" class="filterDiv adults"> 
+                            <div class="style__block d-flex">
+                                <p>TWERK</p>
+                            </div> 
+                        </a>
+                        <a href="#!" class="filterDiv adults"> 
+                            <div class="style__block d-flex">
+                                <p>LATINA-SOLO</p>
+                            </div> 
+                        </a>
+                        <a href="#!" class="filterDiv adults kids"> 
+                            <div class="style__block d-flex">
+                                <p>АВТОРСКАЯ ХОРЕОГРАФИЯ</p>
+                            </div> 
+                        </a>
+                        <a href="#!" class="filterDiv kids"> 
+                            <div class="style__block d-flex">
+                                <p>РИТМИКА</p>
+                            </div> 
+                        </a>
+                    </div>  
+                </div>
+            </div>
+
+        </section>
+        
+        <section class="our-teachers" id="our-teachers">
+            <div class="our-teachers__h2 d-flex">
+                <div class="container">
+                    <h2>НАШИ УЧИТЕЛЯ</h2>
+                </div>
+                </div>
+                <div class="container">
+                    <div class="our-teachers__content d-flex flex-sb flex-wrap">
+                        <div class="our-teacher">
+                            <img src="images/teacer-alena-lev.jpg" alt="АЛЕНА ЛЕВАШОВА">
+                            <p>АЛЕНА ЛЕВАШОВА</p>
+                            <p>TWERK</p>
+                        </div>
+                        <div class="our-teacher">
+                            <img src="images/teacer-ksen-dem.jpg" alt="КСЕНИЯ ДЕМИНА">
+                            <p>КСЕНИЯ ДЕМИНА</p>
+                            <p>HIGH HEELS</p>
+                        </div>
+                        <div class="our-teacher">
+                            <img src="images/teacer-evg-kornee.jpg" alt="ЕВГЕНИЯ КОРНЕЕВА">
+                            <p>ЕВГЕНИЯ КОРНЕЕВА</p>
+                            <p>HIP-HOP</p>
+                        </div>
+                        <div class="our-teacher">
+                            <img src="images/teacer-sabina-fat.jpg" alt="САБИНА ФАТЕХОВА">
+                            <p>САБИНА ФАТЕХОВА</p>
+                            <p>ЛАТИНА СОЛО</p>
+                        </div>
+                        <div class="our-teacher">
+                            <img src="images/teacer-anas-golub.jpg" alt="АНАСТАСИЯ ГОЛУБЕВА">
+                            <p>АНАСТАСИЯ ГОЛУБЕВА</p>
+                            <p>K-POP</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="timetable" id="timetable">
+            <div class="timetable-h2 d-flex flex-sb">
+                <div class="container">
+                    <h2>РАСПИСАНИЕ</h2>
+                </div>
+            </div>
+            <div class="timetable-container container" id="myBtnContainer3">
+                <div class="branches d-grid">
+                    <div class="timetable-rodionova d-flex" >
+                        <!-- <img src="" alt="РОДИОНОВА"> -->
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0ecd281649d4fc5388f6a90ef56847115109322f2852ef82d725cacb4d4cfc19&amp;source=constructor" width="100%" height="100%" border-radius="10" frameborder="0"></iframe>
+                        <button class="btn3 active3" onclick="filterSelection2('rodionovafilter')">РОДИОНОВА</button>
+                    </div>
+                    <div class="timetable-vorovskogo d-flex">
+                        <!-- <img src="" alt="ВОРОВСКОГО"> -->
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A964d220bfcf5ee834797dbf555eacc2a1877fc448611e76823223dd5d5cfcba0&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                        <button class="btn3" onclick="filterSelection2('vorovskogofilter')">ВОРОВСКОГО</button>
+                    </div>
+                </div>
+
+            </div>
+            <!---------- РАСПИСАНИЕ РОДИОНОВА ------------->
+            <div class="timetable-table__rodionova container rodionovafilter filterDiv2">
+                <table class="table__rodionova-kids">
+                    <tr>
+                        <th colspan="7">
+                            ДЕТСКОЕ РАСПИСАНИЕ (ВОРОВСКОГО)
+                        </th>
+                    </tr>
+                    <tr class="table__rodionova--r1">
+                        <td>
+                            НАПРАВЛЕНИЕ  
+                        </td>
+                        <td>
+                            ХОРЕОГРАФ 
+                        </td>
+                        <td>
+                            ПОНЕДЕЛЬНИК 
+                        </td>
+                        <td>
+                            ВТОРНИК 
+                        </td>
+                        <td>
+                            СРЕДА 
+                        </td>
+                        <td>
+                            ЧЕТВЕРГ 
+                        </td>
+                        <td>
+                            ПЯТНИЦА 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            РИТМИКА 3-5 ЛЕТ  
+                        </td>
+                        <td>
+                            ВАЛЕРИЯ 
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                                
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            17:30-18:30 
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            17:30-18:30 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            СОВРЕМЕННАЯ ХОРЕОГРАФИЯ 6-9 ЛЕТ  
+                        </td>
+                        <td>
+                            ВАЛЕРИЯ 
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                                
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            16:30-16:30 
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            16:30-16:30 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HIP-HOP 7+ 
+                        </td>
+                        <td>
+                            ЕВГЕНИЯ КОРНЕЕВА 
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            17:30-18:30
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                                
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            17:30-18:30 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            K-pop Kids 9+
+                        </td>
+                        <td>
+                            АНАСТАСИЯ МОРОЗОВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            16:00-17:00
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            16:00-17:00 
+                        </td>
+                    </tr>
+                </table>
+            </div>  
+            <div class="timetable-table__rodionova container rodionovafilter filterDiv2">
+                <table class="table__rodionova-adults">
+                    <tr>
+                        <th colspan="9">
+                            ВЗРОСЛОЕ РАСПИСАНИЕ (ВОРОВСКОГО)
+                        </th>
+                    </tr>
+                    <tr class="table__rodionova--r1">
+                        <td>
+                            НАПРАВЛЕНИЕ  
+                        </td>
+                        <td>
+                            ХОРЕОГРАФ 
+                        </td>
+                        <td>
+                            ПОНЕДЕЛЬНИК 
+                        </td>
+                        <td>
+                            ВТОРНИК 
+                        </td>
+                        <td>
+                            СРЕДА 
+                        </td>
+                        <td>
+                            ЧЕТВЕРГ 
+                        </td>
+                        <td>
+                            ПЯТНИЦА 
+                        </td>
+                        <td>
+                            СУББОТА 
+                        </td>
+                        <td>
+                            ВОСКРЕСЕНЬЕ 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ВОСТОЧНЫЕ ТАНЦЫ. ПРО УРОВЕНЬ   
+                        </td>
+                        <td>
+                            МАРИНА КУВШИНОВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                                
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                                
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                            19:30-20:30
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                            14:00-15:00
+                        </td>
+                        <!-- ВОСКРЕСЕНЬЕ -->
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            К-РОР. ЗАКРЫТАЯ ГРУППА  
+                        </td>
+                        <td>
+                            МАРИЯ ГОГОЛЬ
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                                
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                                
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                            19:30-21:00
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                                
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                        <!-- ВОСКРЕСЕНЬЕ -->
+                        <td>
+                            17:00-18:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            К-РОР. НАЧИНАЮЩИЙ УРОВЕНЬ 
+                        </td>
+                        <td>
+                            АНАСТАСИЯ ГОЛУБЕВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                                
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                            17:00-19:00
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            
+                        </td>
+
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                        <!-- ВОСКРЕСЕНЬЕ -->
+                        <td>
+                            17:00-18:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Jazz Funk. Средний уровень
+                        </td>
+                        <td>
+                            АНГЕЛИНА МЕЩАНИНОВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            17:30-18:30
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            17:30-18:30
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                        <!-- ВОСКРЕСЕНЬЕ -->
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HIGH HEELS. Начинающий уровень
+                        </td>
+                        <td>
+                            ЕВГЕНИЯ КОРНЕЕВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            18:30-19:30
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            18:30-19:30
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                        <!-- ВОСКРЕСЕНЬЕ -->
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HIGH HEELS. Продолжающий уровень
+                        </td>
+                        <td>
+                            ЕКАТЕРИНА КУДРЯВЦЕВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            19:30-20:30
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                        <!-- ВОСКРЕСЕНЬЕ -->
+                        <td>
+                            19:30-20:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HIP-HOP. Продолжающий уровень
+                        </td>
+                        <td>
+                            АНГЕЛИНА КАРТЯН
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                            18:30-19:30
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            18:30-19:30
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                        <!-- ВОСКРЕСЕНЬЕ -->
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HIP-HOP. Начинающий уровень
+                        </td>
+                        <td>
+                            ЕКАТЕРИНА КУДРЯВЦЕВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            19:30-21:00
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            19:30-21:00
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                        <!-- ВОСКРЕСЕНЬЕ -->
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            TWERK. Начинающий уровень
+                        </td>
+                        <td>
+                            Алиса Вязовикова
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            21:00-22:00
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            21:00-22:00
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                        <!-- ВОСКРЕСЕНЬЕ -->
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            TWERK. Продолжающий уровень
+                        </td>
+                        <td>
+                            ЕКАТЕРИНА КУДРЯВЦЕВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            19:00-20:30
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                            19:00-20:30
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                        <!-- ВОСКРЕСЕНЬЕ -->
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            АВТОРСКАЯ ХОРЕОГРАФИЯ
+                        </td>
+                        <td>
+                            КСЕНИЯ ДЕМИНА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                            20:30-21:30
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                        <!-- ВОСКРЕСЕНЬЕ -->
+                        <td>
+                            20:30-21:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            STRIP DANCE
+                        </td>
+                        <td>
+                            КСЕНИЯ АЛИМОВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            19:30-20:30
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                            16:00-17:00
+                        </td>
+                        <!-- ВОСКРЕСЕНЬЕ -->
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            РЕГГЕТОН. НАЧИНАЮЩИЙ УРОВЕНЬ
+                        </td>
+                        <td>
+                            МАРИЯ КРАЙНОВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            19:30-20:30
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            19:30-20:30
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                        <!-- ВОСКРЕСЕНЬЕ -->
+                        <td>
+                                
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!---------- РАСПИСАНИЕ ВОРОВСКОГО ------------->    
+            <div class="timetable-table__rodionova container vorovskogofilter filterDiv2">
+                <table class="table__rodionova-kids">
+                    <tr>
+                        <th colspan="7">
+                            ДЕТСКОЕ РАСПИСАНИЕ (ВОРОВСКОГО)
+                        </th>
+                    </tr>
+                    <tr class="table__rodionova--r1">
+                        <td>
+                            НАПРАВЛЕНИЕ  
+                        </td>
+                        <td>
+                            ХОРЕОГРАФ 
+                        </td>
+                        <td>
+                            ПОНЕДЕЛЬНИК 
+                        </td>
+                        <td>
+                            ВТОРНИК 
+                        </td>
+                        <td>
+                            СРЕДА 
+                        </td>
+                        <td>
+                            ЧЕТВЕРГ 
+                        </td>
+                        <td>
+                            ПЯТНИЦА 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            РИТМИКА 3-5 ЛЕТ  
+                        </td>
+                        <td>
+                            САБИНА ФАТЕХОВА 
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                                
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                                
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                            17:30-18:30
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            16:30-17:30 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            СОВРЕМЕННАЯ ХОРЕОГРАФИЯ 5-8 ЛЕТ  
+                        </td>
+                        <td>
+                            ИРИНА АНТОНЕЦ 
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            17:30-18:30
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            17:30-18:30
+                        </td>
+                    </tr>
+                </table>
+            </div>  
+            <div class="timetable-table__rodionova container vorovskogofilter filterDiv2">
+                <table class="table__rodionova-adults">
+                    <tr>
+                        <th colspan="9">
+                            ВЗРОСЛОЕ РАСПИСАНИЕ (ВОРОВСКОГО) 
+                        </th>
+                    </tr>
+                    <tr class="table__rodionova--r1">
+                        <td>
+                            НАПРАВЛЕНИЕ  
+                        </td>
+                        <td>
+                            ХОРЕОГРАФ 
+                        </td>
+                        <td>
+                            ПОНЕДЕЛЬНИК 
+                        </td>
+                        <td>
+                            ВТОРНИК 
+                        </td>
+                        <td>
+                            СРЕДА 
+                        </td>
+                        <td>
+                            ЧЕТВЕРГ 
+                        </td>
+                        <td>
+                            ПЯТНИЦА 
+                        </td>
+                        <td>
+                            СУББОТА 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            K-POP   
+                        </td>
+                        <td>
+                            ДАША ШИШОВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            18:30-19:30
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                                
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                            20:30-21:30
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            TWERK  
+                        </td>
+                        <td>
+                            АЛЕНА ЛЕВАШОВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                                
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            20:30-21:30
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                            
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            20:30-21:30
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                                
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HIGH HEELS
+                        </td>
+                        <td>
+                            КСЕНИЯ ДЕМИНА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            19:30-20:30
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            19:30-20:30
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Latin Dance Fitness
+                        </td>
+                        <td>
+                            ЕЛЕНА ВОРОНИНА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                                
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                            12:30-13:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            JAZZ-FUNK
+                        </td>
+                        <td>
+                            ИРИНА МИТРОФАНОВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            17:30-18:30
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            19:30-20:30 
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                            
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            19:30-20:30 
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ЛАТИНА
+                        </td>
+                        <td>
+                            САБИНА ФАТЕХОВА
+                        </td>
+                        <!-- ПОНЕДЕЛЬНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- ВТОРНИК -->
+                        <td>
+                            
+                        </td>
+                        <!-- СРЕДА -->
+                        <td>
+                            19:30-20:30
+                        </td>
+                        <!-- ЧЕТВЕРГ -->
+                        <td>
+                            
+                        </td>
+                        <!-- ПЯТНИЦА -->
+                        <td>
+                            18:30-19:30
+                        </td>
+                        <!-- СУББОТА -->
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>              
+        </section>
+
+        <section class="service-cost" id="service-cost">
+            <div class="service-cost-h2 d-flex">
+                <h2 class="container">СТОИМОСТЬ</h2>
+            </div>
+            <div class="service-cost-container container">
+                <div class="service-cost-btn d-grid" id="myBtnContainer4">
+                    <button class="btn4 active4 subscription" onclick="filterSelection4('service-cost-info')">АБОНЕМЕНТЫ</button>
+                    <button class="btn4 promotions" onclick="filterSelection4('promotions-info')">АКЦИИ</button>
+                    <button class="btn4 rent" onclick="filterSelection4('rent-ifo')">АРЕНДА</button>
+                </div>
+                <div class="service-cost-info filterDiv4">
+                    <div class="service-cost-info subscription-info">
+                        <div class="subscription-kids-btn d-grid" id="myBtnContainer5">
+                            <button class="btn5 active5 subscription-1h-btn" onclick="filterSelection5('subscription-1h')">1 ЧАС</button>
+                            <button class="btn5 subscription-1h-30m-btn" onclick="filterSelection5('subscription-1h-30m')">1.5 ЧАСА</button>
+                            <button class="btn5 subscription-individual-sessions-btn" onclick="filterSelection5('subscription-individual-sessions')">ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ</button>
+                            <button class="btn5 subscription-kids-btn" onclick="filterSelection5('subscription-kids')">ДЕТСКИЕ НАПРАВЛЕНИЯ</button>
+                        </div>
+                        <div class="subscription-1h filterDiv5">
+                            <table>
+                                <tr>
+                                    <th colspan="3">
+                                        1 ЧАС 
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>1 ЗАНЯТИЕ</td>
+                                    <td>500Р</td>
+                                    <td> 
+                                        <ul>
+                                            <li>Посещение 1 часового занятия по расписанию</li>
+                                            <li>Срок действия занятий 30 дней с первгого посещения</li>
+                                            <li>Время занятий будни с 16:00 и выходные</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4 ЗАНЯТИЯ</td>
+                                    <td>1800Р</td>
+                                    <td> 
+                                        <ul>
+                                            <li>Посещение 4 часовых занятия по расписанию</li>
+                                            <li>Срок действия занятий 30 дней с первгого посещения</li>
+                                            <li>Время занятий будни с 16:00 и выходные</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8 ЗАНЯТИЙ</td>
+                                    <td>2800Р</td>
+                                    <td> 
+                                        <ul>
+                                            <li>Посещение 8 часовых занятий по расписанию</li>
+                                            <li>Срок действия занятий 30 дней с первгого посещения</li>
+                                            <li>Время занятий будни с 16:00 и выходные</li>
+                                        </ul>
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>12 ЗАНЯТИЙ</td>
+                                    <td>3600Р</td>
+                                    <td> 
+                                        <ul>
+                                            <li>Посещение 12 часовых занятий по расписанию</li>
+                                            <li>Срок действия занятий 30 дней с первгого посещения</li>
+                                            <li>Время занятий будни с 16:00 и выходные</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>БЕЗЛИМИТ 1 МЕСЯЦ</td>
+                                    <td>5500Р</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>БЕЗЛИМИТ 3 МЕСЯЦА</td>
+                                    <td>14000Р</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="subscription-1h-30m filterDiv5">
+                            <table>
+                                <tr>
+                                    <th colspan="3">
+                                        1.5 ЧАСА
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>1 ЗАНЯТИЕ</td>
+                                    <td>700Р</td>
+                                    <td> 
+                                        <ul>
+                                            <li>Посещение 1 занятия длительностью 1.5 часа по расписанию</li>
+                                            <li>Срок действия занятий 30 дней с первгого посещения</li>
+                                            <li>Время занятий вечер будни и выходные</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4 ЗАНЯТИЯ</td>
+                                    <td>2600Р</td>
+                                    <td> 
+                                        <ul>
+                                            <li>Посещение 4 занятия длительностью 1.5 часа по расписанию</li>
+                                            <li>Срок действия занятий 30 дней с первгого посещения</li>
+                                            <li>ремя занятий вечер будни и выходные</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8 ЗАНЯТИЙ</td>
+                                    <td>3800Р</td>
+                                    <td> 
+                                        <ul>
+                                            <li>Посещение 8 занятий длительностью 1.5 часа по расписанию</li>
+                                            <li>Срок действия занятий 30 дней с первгого посещения</li>
+                                            <li>ремя занятий вечер будни и выходные</li>
+                                        </ul>
+                                    </td>
+                                    
+                                </tr>
+                            </table>                                
+                        </div>
+                        <div class="subscription-individual-sessions filterDiv5">
+                            <table>
+                                <tr>
+                                    <th colspan="3">
+                                        ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>ИНДИВИДУАЛЬНОЕ ЗАНЯТИЕ 1 ЧЕЛОВЕК</td>
+                                    <td>1500Р</td>
+                                    <td> 
+                                        Индивидуальное занятие длительностью час, с любым педагогом нашей студии.Для записи обращаться к администратору.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ИНДИВИДУАЛЬНОЕ ЗАНЯТИЕ 2 ЧЕЛОВЕКА</td>
+                                    <td>2000Р</td>
+                                    <td> 
+                                        Индивидуальное занятие для двоих, с любым педагогом, любого направления в нашей студи. Для записи обращаться к администратору.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ИНДИВИДУАЛЬНОЕ ЗАНЯТИЕ ОТ 3 ДО 5 ЧЕЛОВЕК</td>
+                                    <td>2500Р</td>
+                                    <td> 
+                                        Индивидуальное занятие небольшой группой с любым педагогом нашей студи. Запись у администратора
+                                    </td>                                        
+                                </tr>
+                                <tr>
+                                    <td>ИНДИВИДУАЛЬНОЕ ЗАНЯТИЕ БОЛЕЕ 5 ЧЕЛОВЕК</td>
+                                    <td>3000Р</td>
+                                    <td> 
+                                        Индивидуальное занятие для группы более 5 человек, по любому направлению. Для записи обращаться к администратору
+                                    </td>                                        
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="subscription-kids filterDiv5">
+                            <table>
+                                <tr>
+                                    <th colspan="3">
+                                        ДЕТСКИЕ НАПРАВЛЕНИЯ
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>8 ЗАНЯТИЙ (1 ЧАС)/td>
+                                    <td>2600Р</td>
+                                    <td> 
+                                        <ul>
+                                            <li>Посещение 8 часовыхХ занятий по расписанию 2 раза в неделю</li>
+                                            <li>Срок действия занятий 30 дней с первгого посещения</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4 ЗАНЯТИЯ (1 ЧАС)</td>
+                                    <td>1600Р</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>8 ЗАНЯТИЙ (1.5 ЧАСА)</td>
+                                    <td>3300Р</td>
+                                    <td> 
+                                        <ul>
+                                            <li>Посещение 1.5 часовых занятий по расписанию 2 раза в неделю</li>
+                                            <li>Срок действия занятий 30 дней с первгого посещения</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotions-info filterDiv4 d-flex flex-sb">
+                    <div class="promotions-info-block d-flex">
+                        <p class="promotions-info-p1">ПЕРВОЕ ПРОБНОЕ ЗАНЯТИЕ БЕСПЛАТНО</p>
+                        <p class="promotions-info-p2">А так же в течении дня действует скидка 20% на любой аббонемент студии</p>
+                        <p class="promotions-info-p3">*для новых учеников</p>
+                    </div>
+                    <div class="promotions-info-block d-flex">
+                        <p class="promotions-info-p1">СКИДКА ДЛЯ НОВИЧКА 20%</p>
+                        <p class="promotions-info-p2">Скидка действует в день вашего первого посещения Студии, на все абонементы.</p>
+                        <p class="promotions-info-p3">*для новых учеников</p>
+                    </div>
+                    <div class="promotions-info-block d-flex">
+                        <p class="promotions-info-p1">СТУДЕНЧЕСКАЯ СКИДКА 20%</p>
+                        <p class="promotions-info-p2">Действует в любое время на любой абонемент Студии при наличии сдуенческого билета (для очного отделения).</p>
+                        <p class="promotions-info-p3">*для очного отделения</p>
+                    </div>
+                </div>
+                <div class="rent-ifo filterDiv4">
+                    <div class="rent-ifo-h2 container d-flex">
+                        <h2 class="container">СТОИМОСТЬ</h2>
+                    </div>
+                    <div class="rent-ifo-rooms d-flex flex-sb">
+                        <div>
+                            <img src="images/white-room.jpg" alt="">
+                            <p>
+                                Просторный зал. Подходит для проведения занятий по танцевальным и фитнес направлениям, 
+                                мастер-классов, мероприятий, съёмок.  
+                            </p>
+                            <a href="#record-form">
+                                <div class="d-flex">ЗАБРОНИРОВАТЬ</div>            
+                            </a>
+                        </div>
+                        <div>
+                            <img src="images/space-room.jpg" alt="">
+                            <p>
+                                Уютный зал. Подходит для занятий по танцевальным и фитнес направлениям, мероприятий, мастер-классов, съёмок
+                            </p>
+                            <a href="#record-form">
+                                <div class="d-flex">ЗАБРОНИРОВАТЬ</div>            
+                            </a>
+                        </div>
+                        <div>
+                            <img src="images/gray-room.jpg" alt="">
+                            <p>
+                                Зал с неоновым светом. Подходит для занятий по танцевальным и фитнес направлениям, мероприятий, мастер-классов, съёмок.
+                            </p>
+                            <a href="#record-form">
+                                <div class="d-flex">ЗАБРОНИРОВАТЬ</div>            
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="questions-answers" id="questions-answers">
+            <div class="questions-answers-h2 d-flex flex-sb">
+                <div class="container">
+                    <h2>О НАС</h2>
+                </div>
+            </div>
+
+            <div class="about-us container">
+                <div class="about-us-block d-flex flex-sb">
+                    <p>DanceLife - профессиональная студия танцев. <br>
+                        Топовые педагоги города, танцевальные мароприятия, большие залы, удобное местоположение и большая танцевальная семья - это всё про нас! <br>
+                        Открой новые грани своих возможностей и прокачай танцевальные навыки вместе с нами!</p>
+                    <img src="images/about-us-img-3.jpg" alt="">
+                </div>
+                <div class="about-us-block d-flex flex-sb">
+                    <img src="images/about-us-img-4.jpg" alt="">
+                    <div class="about-us-block2">
+                        <ul>
+                            <li>Топовые педагоги города</li>
+                            <li>Два филиала</li>
+                            <li>Четыре комфортных зала</li>
+                            <li>Разнообразие абонементов</li>
+                            <li>Акции и скидки</li>
+                            <li>Танцевальные мастер-классы и ивенты</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>ВОПРОСЫ И ОТВЕТЫ</h2>
+            </div>
+            <div class="questions-answers-container container d-flex">
+                <div class="accordion-div">
+                    <button class="accordion">МОГУ ЛИ Я ПРИЙТИ ЗАНИМАТЬСЯ, ЕСЛИ Я НИКОГДА РАНЕЕ НЕ ТАНЦЕВАЛ? </button>
+                    <div class="panel">
+                        <p>Да, многие направления разбиты на группы для начинающих и продолжающих. К начинающим можно присоединиться в любой момент! <br> Более подробно по каждому направлению вас проинформируют администраторы наших Студий по телефонам: <br> Филиал Воровского 412-88-87 / Филиал Родионова 234-21-91.</p>
+                    </div>
+                </div>
+                <div class="accordion-div">
+                    <button class="accordion">КАК ОДЕВАТЬСЯ НА ЗАНЯТИЯ?</button>
+                    <div class="panel">
+                        <p>ДОдежда для занятий должна быть комофртная для Вас. Это спортивные штаны/леггинсы, майка/футболка/топ, и обувь соответсвующая стилю.</p>
+                    </div>
+                </div>
+                <div class="accordion-div">
+                    <button class="accordion">ЧТО БРАТЬ С СОБОЙ НА ЗАНЯТИЯ?</button>
+                    <div class="panel">
+                        <p>На занятия с собой нужно взять сменную одежду и обувь , бутылочку воды, наколенники (для некоторых стилей).</p>
+                    </div>
+                </div>
+                <div class="accordion-div">
+                    <button class="accordion">КАК ЗАПИСАТЬСЯ НА ЗАНЯТИЕ?</button>
+                    <div class="panel">
+                        <p>Что бы записаться на занятие вы можете позвонить нам по номеру телефона: +7 (831) 412-88-87.<br>Либо связаться с нами вконтакте: Студия танцев DANCE LIFE (vk.com) <br> Или инстаграм: @dancelifestudionn</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="record-form" id="record-form">
+            <div class="container d-flex">
+                <div class="record-form__info d-flex">
+                    <p class="record-form__info--top">! ЗАПОЛНЯЙ ФОРМУ, И МЫ СВЯЖЕМСЯ С ТОБОЙ В БЛИЖАЙШЕЕ ВРЕМЯ И ПРЕДОСТАВИМ ПОДРОБНУЮ ИНФОРМАЦИЮ</p>
+                    <p class="record-form__info--bottom">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку персональных данных</p>
+                </div>
+                <form id="record-form-id" class="record-form" action="" method="post">
+                    <div class="form-container d-flex">
+                        <legend class="legend">ОНЛАЙН-ЗАЯВКА</legend>
+                        <input class="form-input" type="text" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" title="Введите свое имя русскими или латинскими буквами">
+                        <input class="form-input" type="tel" placeholder="Телефон в формате 8ХХХХХХХХХХ" pattern="8[0-9]{10}" title="Введите номер телефона в формате 8ХХХХХХХХХХ">
+                        <input class="form-input" type="email" placeholder="e-mail">
+                        <div class="form__button d-flex">
+                            <a href="">ОТПРАВИТЬ</a>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container d-flex flex-sb">
+            <div class="footer-left d-flex">
+                <ul class="footer__menu d-flex">
+                    <li><a href="#dance-styles">ТАНЦЕВАЛЬНЫЕ СТИЛИ</a></li>
+                    <li><a href="service-cost.html">СТОИМОСТЬ</a></li>
+                    <li><a href="timetable.html">РАСПИСАНИЕ</a></li>
+                    <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                    <li><a href="about-us.html">О НАС</a></li>
+                </ul>
+            </div>
+            <div class="footer-center d-flex">
+                <div class="social-media">
+                    <img src="images/you-tube.png" alt="">
+                    <img src="images/telegram.png" alt="">
+                    <img src="images/instagram.png" alt="">
+                </div>
+                <div>
+                    <a href=""><img src="images/Logo2.png" alt=""></a>
+                    
+                </div>
+            </div>
+            <div class="footer-rigth">
+                <ul class="footer-rigth__adress">
+                    <li>УЛ.ВОРОВСКОГО, Д.3 </li>
+                    <li>УЛ.РОДИОНОВА, Д.193/1</li>
+                </ul>
+                <ul class="footer-rigth__phone">
+                    <li>+7(831)412-88-87</li>
+                    <li>+7(831)412-88-86</li>
+                </ul>
+                <p class="footer-rigth__email">dancelifepro@gmail.com</p>
+            </div>
+        </div>
+        
+    </footer>
+<script src="JS/filter.js"></script>
+<script src="JS/accordion.js"></script>
+<script src="JS/timetable.js"></script>
+<script src="JS/servicecost.js"></script>
+<script src="JS/subscription.js"></script>
+</body>
+</html>
