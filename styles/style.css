@@ -23,6 +23,18 @@ body {
     /* background: radial-gradient(40% 50%,  #FF6D00, #240046); */
 }
 
+.thank-you-main {
+    width: 100%;
+    background: linear-gradient(0deg,#240046 ,#B5179E ,#240046);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.thank-you-main h1 {
+    margin-bottom: 75px;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -418,7 +430,7 @@ tr:hover {
 .our-teachers__h2 h2 {
     font-family: 'Raleway';
     font-size: 62px;
-    width: 1140px;
+    width: auto;
 }
 
 .our-teachers__content {

@@ -44,4 +44,342 @@
         width: 50%;
         z-index: 100;
     }
+
+    .banner-container img {
+        margin-left: 0;
+    }
+
+/******* Гамбургер - конец ********/
+    .banner-container {
+        position: relative;
+    }
+
+    .banner-img-media {
+        order: 1;
+        position: relative;
+        right: 80px;
+    }
+
+    .banner-container-media {
+        position: absolute;
+        order: 2;
+        right: 0;
+    }
+
+    .dance-styles__top {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dance-styles__top h2 {
+        margin-bottom: 20px;
+        width: auto;
+    }
+
+    .dance-styles__top-container {
+        justify-content: center;
+    }
+
+    .dance-styles__blocks {
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .style__block {
+        width: 200px;
+        height: 100px;
+    }
+
+    .dance-styles__blocks a {
+        margin-bottom: 20px;
+    }
+
+    .dance-styles__blocks a {
+        margin-bottom: 0;
+    }
+
+    .dance-styles__blocks {
+        margin-bottom: 0;
+    }
+
+    .dance-styles__bottom .container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .style__block p {
+        width: 200px;
+    }
+
+    .our-teachers__content {
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .timetable h2 {
+        width: auto;
+    }
+
+    .timetable-rodionova, .timetable-vorovskogo {
+        width: auto;
+    }
+
+    .service-cost-h2 {
+        justify-content: center;
+    }
+
+    .service-cost-h2 h2 {
+        width: auto;
+    }
+
+    td {
+        font-size: 12px;
+    }
+
+    .table__rodionova--r1 {
+        font-size: 12px;
+    }
+
+    .questions-answers-h2 h2 {
+        width: auto;
+    }
+
+    .about-us-block p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-right: 35px;
+    }
+
+    .about-us-block2 ul li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .rent-ifo-rooms {
+        flex-wrap: wrap;
+    }
+    
+    .rent-ifo-rooms div {
+        margin-bottom: 50px;
+    }
+
+    .service-cost {
+        margin-bottom: 0;
+    }
+
+    .record-form__info--top {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    legend {
+        margin-top: 45px;
+        font-size:  20px;
+        font-family: 'Raleway';
+        margin-bottom: 45px;
+    }
+
+    .social-media img {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .social-media {
+        display: flex;
+        gap: 20px;
+    }
+    .promotions-info-block {
+        margin-bottom: 50px;
+    }
+
+    .service-cost-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rent-ifo {
+        order: 1;
+    }
+
+    .promotions-info {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .banner-img-media {
+        right: 180px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .banner-img-media {
+        right: 100px;
+        top: 40px;
+    }
+
+    .banner-container-media h1 {
+        font-size: 50px;
+        line-height: 70px;
+        text-align: right;
+    }
+
+    .banner-container-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        align-items: end;
+    }
+
+    .banner-img-media img {
+        height: 70%;
+    }
+
+    .banner-container {
+        height: auto;
+    }
+
+    .banner-container-media {
+        height: auto;
+    }
+
+    .banner {
+        height: 570px;
+    }
+
+    .banner  .header__button {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 806px) {
+    .promotions-info-block {
+        width: 650px;
+    }
+
+    .btn3 {
+        top: 175px;
+    }
+
+    .timetable-rodionova, .timetable-vorovskogo {
+        height: 100%;
+    }
+
+    .timetable-container {
+        height: 100%;
+        margin-bottom: 75px;
+    }
+
+    .rent-ifo-rooms {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .table__rodionova--r1 {
+        font-size: 2px;
+    }
+
+    td {
+        padding-left: 0;
+    }
+
+    
+}
+
+@media screen and (max-width: 715px) {
+    .banner  .header__button {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .dance-styles__top-container h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .btn3 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner-container-media h1 {
+        font-size: 40px;
+        width: 50%;
+    }
+
+    .banner  .header__button {
+        width: 35%;
+    }
+
+    .dance-styles__top-container h2 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .dance-styles__top-container h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .banner-container-media h1 {
+        font-size: 30px;
+        width: 50%;
+    }
+
+    .banner  .header__button {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .banner-container-media {
+        z-index: 1;
+    }
+
+    .dance-styles__top-container h2 {
+        font-size: 35px;
+    }
+
+    .btn {
+        width: 190px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .dance-styles__top-container h2 {
+        font-size: 30px;
+    }
+
+    .btn {
+        width: 170px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .banner-container-media h1 {
+        font-size: 20px;
+    }
+
+    .header__button a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .dance-styles__top-container h2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 130px;
+    }
 }
